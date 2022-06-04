@@ -1,0 +1,187 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local DAHOODHUB = Instance.new("TextButton")
+local CLOSE = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Workspace
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+main.Position = UDim2.new(0.137804881, 0, 0.131212726, 0)
+main.Size = UDim2.new(0, 547, 0, 328)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = ScreenGui
+label.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+label.BackgroundTransparency = 1.000
+label.BorderColor3 = Color3.fromRGB(27, 42, 53)
+label.Position = UDim2.new(0.132926837, 0, 0.157057658, 0)
+label.Size = UDim2.new(0, 200, 0, 50)
+label.Font = Enum.Font.SpecialElite
+label.Text = "VOID X"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 36.000
+
+DAHOODHUB.Name = "DA HOOD HUB"
+DAHOODHUB.Parent = ScreenGui
+DAHOODHUB.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+DAHOODHUB.Position = UDim2.new(0.170731708, 0, 0.280318081, 0)
+DAHOODHUB.Size = UDim2.new(0, 485, 0, 50)
+DAHOODHUB.Style = Enum.ButtonStyle.RobloxRoundButton
+DAHOODHUB.Font = Enum.Font.SourceSansBold
+DAHOODHUB.Text = "DA HOOD HUB"
+DAHOODHUB.TextColor3 = Color3.fromRGB(0, 0, 0)
+DAHOODHUB.TextSize = 38.000
+DAHOODHUB.MouseButton1Down:connect(function()
+	local ScreenGui = Instance.new("ScreenGui")
+	local main = Instance.new("Frame")
+	local label = Instance.new("TextLabel")
+	local swagmodeprotection = Instance.new("TextButton")
+	local InfiniteYeild = Instance.new("TextButton")
+	local DaHoodFaded = Instance.new("TextButton")
+	local DaHoodSwagMode = Instance.new("TextButton")
+
+	--Properties:
+
+	ScreenGui.Parent = game.CoreGui
+
+	main.Name = "main"
+	main.Parent = ScreenGui
+	main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+	main.Position = UDim2.new(0.317178518, 0, 0.354508579, 0)
+	main.Size = UDim2.new(0, 479, 0, 218)
+	main.Active = true
+	main.Draggable = true
+
+	label.Name = "label"
+	label.Parent = ScreenGui
+	label.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+	label.Position = UDim2.new(0.316129029, 0, 0.35387674, 0)
+	label.Size = UDim2.new(0, 479, 0, 38)
+	label.Font = Enum.Font.Roboto
+	label.Text = "Void HUB X"
+	label.TextColor3 = Color3.fromRGB(0, 0, 0)
+	label.TextSize = 26.000
+
+	swagmodeprotection.Name = "swagmode protection"
+	swagmodeprotection.Parent = ScreenGui
+	swagmodeprotection.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+	swagmodeprotection.BorderColor3 = Color3.fromRGB(27, 42, 53)
+	swagmodeprotection.Position = UDim2.new(0.636129022, 0, 0.475149095, 0)
+	swagmodeprotection.Size = UDim2.new(0, 200, 0, 50)
+	swagmodeprotection.Font = Enum.Font.SourceSansBold
+	swagmodeprotection.Text = "SwagMode Protection"
+	swagmodeprotection.TextColor3 = Color3.fromRGB(0, 0, 0)
+	swagmodeprotection.TextSize = 22.000
+	swagmodeprotection.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/RealLuzu/Swag_Protection/main/shitmode'))();
+
+	end)
+
+	InfiniteYeild.Name = "Infinite Yeild"
+	InfiniteYeild.Parent = ScreenGui
+	InfiniteYeild.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+	InfiniteYeild.Position = UDim2.new(0.343225807, 0, 0.628230631, 0)
+	InfiniteYeild.Size = UDim2.new(0, 200, 0, 50)
+	InfiniteYeild.Font = Enum.Font.SourceSansBold
+	InfiniteYeild.Text = "Infinite Yeild"
+	InfiniteYeild.TextColor3 = Color3.fromRGB(0, 0, 0)
+	InfiniteYeild.TextSize = 22.000
+	InfiniteYeild.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+
+	DaHoodFaded.Name = "Da Hood Faded"
+	DaHoodFaded.Parent = ScreenGui
+	DaHoodFaded.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+	DaHoodFaded.Position = UDim2.new(0.636129022, 0, 0.628230631, 0)
+	DaHoodFaded.Size = UDim2.new(0, 200, 0, 50)
+	DaHoodFaded.Font = Enum.Font.SourceSansBold
+	DaHoodFaded.Text = "Da Hood Faded"
+	DaHoodFaded.TextColor3 = Color3.fromRGB(0, 0, 0)
+	DaHoodFaded.TextSize = 22.000
+	DaHoodFaded.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+
+	end)
+
+	DaHoodSwagMode.Name = "Da Hood SwagMode"
+	DaHoodSwagMode.Parent = ScreenGui
+	DaHoodSwagMode.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+	DaHoodSwagMode.Position = UDim2.new(0.343225807, 0, 0.475149095, 0)
+	DaHoodSwagMode.Size = UDim2.new(0, 200, 0, 50)
+	DaHoodSwagMode.Font = Enum.Font.SourceSansBold
+	DaHoodSwagMode.Text = "Da Hood Swagmode"
+	DaHoodSwagMode.TextColor3 = Color3.fromRGB(0, 0, 0)
+	DaHoodSwagMode.TextSize = 22.000
+	DaHoodSwagMode.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+
+	end)
+end)
+
+CLOSE.Name = "CLOSE"
+CLOSE.Parent = ScreenGui
+CLOSE.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+CLOSE.BackgroundTransparency = 1.000
+CLOSE.Position = UDim2.new(0.731707335, 0, 0.14314115, 0)
+CLOSE.Size = UDim2.new(0, 54, 0, 38)
+CLOSE.Font = Enum.Font.SourceSans
+CLOSE.Text = "X"
+CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLOSE.TextSize = 57.000
+
+-- Scripts:
+
+local function HBZLRU_fake_script() -- CLOSE.Open/Close (PUT ME IN A TEXTBUTTON) 
+	local script = Instance.new('LocalScript', CLOSE)
+
+	script.Parent.MouseButton1Click:connect(function()
+	 script.Parent.Parent.Credit.Visible = not script.Parent.Parent.Credit.Visible
+	end)
+	
+	--                                                               ^
+	--]]	Change "Credit" to the name of the frame                 ^                      
+end
+coroutine.wrap(HBZLRU_fake_script)()
+local function HQWZ_fake_script() -- nil.Instructions 
+	local script = Instance.new('Script', nil)
+
+	---Hello! Thank you for using this script originally by Roman On Fire on YouTube!
+	
+	--First of all- I'm dumb. I'm taking no credit for this. All credit goes to Roman On Fire.
+	
+	--SO!
+	
+	
+	----- ~Instructions~ -----
+	
+	-- 1. Make a TextButton 
+	-- 2. Make a Frame, and rename it Credit (if you don't want to touch the script)
+	--	 or rename it whatever (Menu, Rules) and then in the script you'll see what to do.
+	--3. Customize yer stuff, and make the frame invisible by unchecking "Visible."
+	
+	----- ~Done~ -----
+	
+	--And again, thank you. You may want to delete this after.
+	
+	--- ~~Published by LAClout ~~ ---
+	
+	--I don't know if this was already published by anyone else, but I'm sorry if this was.
+	
+	--P.S. Publishing this as your own is like saying "I suck at this stuff, so I'mma be a 
+	--	wannabe and say "I made this"
+end
+coroutine.wrap(HQWZ_fake_script)()
